@@ -1,0 +1,97 @@
+/* Fuente principal moderna */
+body {
+  background-color: #0d1117;
+  color: #e6edf3;
+  font-family: 'Segoe UI', 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* Imagen con borde neón */
+.neon-border {
+  border: 4px solid #00d1ff;
+  box-shadow: 0 0 15px #00d1ff, 0 0 30px rgba(0, 209, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.neon-border:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00d1ff, 0 0 50px rgba(0, 209, 255, 0.6);
+}
+
+/* Texto con gradiente */
+.text-gradient {
+  background: linear-gradient(90deg, #00d1ff, #6d67e4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Fondo de navbar con degradado */
+.bg-gradient-primary {
+  background: linear-gradient(90deg, #151a4f, #272b6a, #151a4f);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos de enlaces */
+a.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+a.nav-link:hover,
+a.nav-link.active {
+  color: #00d1ff !important;
+}
+
+a.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #00d1ff;
+  transition: width 0.3s ease;
+}
+
+a.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Sombra general para contenedores */
+.container, main, header {
+  box-shadow: 0 0 15px rgba(0, 209, 255, 0.05);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* Tipografía de títulos */
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Ajustes de listas */
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+ul li, ol li {
+  margin-bottom: 0.5rem;
+}
+
+/* Botones (si agregas alguno) */
+.btn-custom {
+  background-color: #00d1ff;
+  color: #0d1117;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #6d67e4;
+  box-shadow: 0 0 10px #6d67e4;
+}
